@@ -19,9 +19,9 @@ The quality of the cake itself is dependent on the smoothness of the batter. We 
 
 Traditionalists will insist that cheesecake, which is a custard, should be cooked in a water bath. Two things here. One, you can’t use your spring form pan, and getting the cake out after cooking will be a nightmare. The times I’ve tried using a standard cake pan split the crust at the bottom. The improved batter was offset by the reduced crust. Two, finding a pan large enough to hold the pan and a reasonable amount of water can be tough. Nothing makes me crazier than recipes calling for single use equipment or hyper specific ingredients. In the oven at 325° F until the center is barely set. It might not seem done, but many of these delicate desserts continue cooking by residual heat. If your cake sets in the oven, it will be overdone on the plate. This method usually causes the cake to crack, so I cover the top of my cheesecakes with a sour cream and powdered sugar frosting.
 <figure class="third">
-	<img src="/assets/images/crust.jpg" height=300>
-	<img src="/assets/images/batter.jpg" height=300>
-	<img src="/assets/images/cheesecake.jpg" height=300>
+	<img src="/assets/images/crust.jpg" style="height:300px">
+	<img src="/assets/images/batter.jpg" style="height:300px">
+	<img src="/assets/images/cheesecake.jpg" style="height:300px">
 	<figcaption>Hand crushed crust, batter cooking in residual heat, plated cheesecake</figcaption>
 </figure>
 Ultimately, if the batter is smooth and the pan is off heat before it sets, the cheesecake should be above average. A couple of the extra steps take it to the next level. These cheesecakes usually come off the fork with no residue and are super rich. The cheesecake is more scared of you than you are of it, so give it a go. [This](https://www.epicurious.com/recipes/member/views/baileys-irish-cream-cheesecake-1252379) is usually my starting recipe. 
