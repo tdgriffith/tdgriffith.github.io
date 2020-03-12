@@ -9,12 +9,10 @@ tags:
 
 There are few things I know from childhood as vibrantly as Mom’s baked goods. In a family of five kids, you quickly learn the social dynamics at play with these desserts. You can only eat the dessert when it’s neither the first piece, nor the last. The [0] piece and the [-1] piece are always off limits. So, you end up in one of Zeno’s paradoxes where the last piece keeps getting smaller and smaller, but the dish is still on the counter. 
 This was especially true of her cheesecake. The most important qualities can be distilled to a science, and the ingredients are basic, so it’s a natural topic. Sugar, eggs, and dairy only, but it’s famously difficult to get right.
-<!-- <figure>
-	<img src="/assets/images/pom_cake.jpg" height=300>
+<figure>
+	<img src="/assets/images/pom_cake.jpg">
 	<figcaption>My Pomegranate Cheesecake with a sad crust</figcaption>
-</figure> -->
-
-![pom cake](/assets/images/pom_cake.jpg | height=300)
+</figure>
 
 Every cheesecake crust should be hand crushed and not too fine. Lots of recipes call for a food processor, but that fine texture doesn’t provide a nice crunch at the end of the fork. I’ve only got anecdotal proof, but I think the finer grain also gets squishy and gross sooner in the fridge. 
 The quality of the cake itself is dependent on the smoothness of the batter. We also want the batter super soft, which makes it richer in the end. I like to get the cream cheese up to room temperature, and then mix it in the stand mixer alone. When adding sugar and the wet ingredients, scrape the bowl. Scrape the bowl so much. Always scrape the bowl. Scrape the bowl scraper. Once the batter is smooth, it goes onto the crust that isn’t too fine. A gentle shaking of the pan helps the air bubbles rise out of the cake and break on the surface. Here again we’re trying to keep the smoothest batter. 
