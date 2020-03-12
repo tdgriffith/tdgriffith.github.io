@@ -10,7 +10,7 @@ tags:
 There are few things I know from childhood as vibrantly as Mom’s baked goods. In a family of five kids, you quickly learn the social dynamics at play with these desserts. You can only eat the dessert when it’s neither the first piece, nor the last. The [0] piece and the [-1] piece are always off limits. So, you end up in one of Zeno’s paradoxes where the last piece keeps getting smaller and smaller, but the dish is still on the counter. 
 This was especially true of her cheesecake. The most important qualities can be distilled to a science, and the ingredients are basic, so it’s a natural topic. Sugar, eggs, and dairy only, but it’s famously difficult to get right.
 <figure>
-	<img src="/assets/images/pom_cake.jpg" style="width:30%">
+	<img src="/assets/images/pom_cake.jpg" style="height:300px">
 	<figcaption>My Pomegranate Cheesecake with a sad crust</figcaption>
 </figure>
 
