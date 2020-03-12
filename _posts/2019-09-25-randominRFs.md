@@ -10,7 +10,7 @@ tags:
 # 1. The Random in Random Forests
 Random forests (RF) are my default starting point for most of the data science I do at Texas A&M. Random forests are the honey badgers of machine learning. **They don't care**. 
 
-![ChessUrl](http://giphygifs.s3.amazonaws.com/media/f8k6R32qjJGV2/giphy.gif "RF doesn't care")
+![dont care](http://giphygifs.s3.amazonaws.com/media/f8k6R32qjJGV2/giphy.gif "RF doesn't care")
 
 They don't care about normalizing to the mean and standard deviation. They don't care about hyperparameters or tuning. You may not be able to get that last 1% of accuracy versus other methods, but RFs are easy to understand and visualize.
 
@@ -597,5 +597,5 @@ Let's revisit our initial motivation:
 Perhaps this statement is misleading. Maybe what I really mean to say is:
 >The average of random error is **zero**. 
 
-If all the trees exploit different paths through the data, the model is generalizable and yields the best prediction. It is *randomly* exploring the trends in the data, putting the random in random forest. You can download this notebook [here](https://drive.google.com/file/d/1oUDjM0dYWXoESoxgQIwU1MeaQiOKMlBM/view?usp=sharing).
+If all the trees exploit different paths through the data, the model generalizes and yields the best prediction. It is *randomly* exploring the trends in the data, putting the random in random forest. You can download this notebook [here](https://drive.google.com/file/d/1oUDjM0dYWXoESoxgQIwU1MeaQiOKMlBM/view?usp=sharing).
 
