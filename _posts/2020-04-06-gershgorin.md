@@ -10,11 +10,11 @@ tags:
 
 # Gershgorin Circle Theorem
 ## 1. Introduction
-Let's talk about linear systems. It's really important to understand the stability of the system. Unstable systems turn small inputs into huge outputs. Generally, we teach students to do some form of eigenvalue decomposition and apply the Routh–Hurwitz stability criterion. 
-
-![alt text](https://isaacscienceblog.files.wordpress.com/2017/08/control_m.gif "Types of Stability")
+Let's talk about linear systems. It's really important to understand the stability of the system. Generally, we teach students to do some form of eigenvalue decomposition and apply the Routh–Hurwitz stability criterion. 
 
 However, these decompositions are notorious for their computational intensity. Enter Prof. Semyon Aranovich Gershgorin from Petrograd Technological Institute. His approach to this problem is so creative that I felt the need to share it. 
+
+![alt text](/assets/images/einen_matrix.png "Original Paper")
 
 ## 2. Some Intuition
 Take a diagonal matrix. Let's say this one:
@@ -35,7 +35,11 @@ The proof for this theorem involves more discussion of norms and eigenvectors an
 Let's think back to the almost diagonal matrix above. If we sum the off diagonal terms, we see that our Gershgorin circle radius is very small. We know the eigenvalues fall inside that very small circle because the matrix is almost diagonal. It's a neat trick to extend the radius as your matrix becomes less diagonal, while still knowing the eigenvalues fall inside. 
 
 ## 4. Application
-This theorem is best described and appreciated with a visualization. 
+This theorem is best described and appreciated with a visualization. Here is a simple web app I build to visualize the circles. You will be able to modify the circle radius and circle center for a 4x4 matrix. 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/jupyter/user/tdgriffith-gershgorin-kmbpflrg/voila/render/2020-04-06_Gershgorin-interactive_01.ipynb)
+
+This clever approach of bounding the neighborhood an eigenvalue may fall in is well applied as a first check for any large system matrix. With only basic mathematical operations, we can get some feel for the nature of the system in a very visual manner.
 
 
 

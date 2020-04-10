@@ -1,10 +1,10 @@
 <h1 id="gershgorin-circle-theorem">Gershgorin Circle Theorem</h1>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Let’s talk about linear systems. It’s really important to understand the stability of the system. Unstable systems turn small inputs into huge outputs. Generally, we teach students to do some form of eigenvalue decomposition and apply the Routh–Hurwitz stability criterion.</p>
-
-<p><img src="https://isaacscienceblog.files.wordpress.com/2017/08/control_m.gif" alt="alt text" title="Types of Stability" /></p>
+<p>Let’s talk about linear systems. It’s really important to understand the stability of the system. Generally, we teach students to do some form of eigenvalue decomposition and apply the Routh–Hurwitz stability criterion.</p>
 
 <p>However, these decompositions are notorious for their computational intensity. Enter Prof. Semyon Aranovich Gershgorin from Petrograd Technological Institute. His approach to this problem is so creative that I felt the need to share it.</p>
+
+<p><img src="/assets/images/einen_matrix.png" alt="alt text" title="Original Paper" /></p>
 
 <h2 id="2-some-intuition">2. Some Intuition</h2>
 <p>Take a diagonal matrix. Let’s say this one:</p>
@@ -25,5 +25,9 @@
 <p>Let’s think back to the almost diagonal matrix above. If we sum the off diagonal terms, we see that our Gershgorin circle radius is very small. We know the eigenvalues fall inside that very small circle because the matrix is almost diagonal. It’s a neat trick to extend the radius as your matrix becomes less diagonal, while still knowing the eigenvalues fall inside.</p>
 
 <h2 id="4-application">4. Application</h2>
-<p>This theorem is best described and appreciated with a visualization.</p>
+<p>This theorem is best described and appreciated with a visualization. Here is a simple web app I build to visualize the circles. You will be able to modify the circle radius and circle center for a 4x4 matrix.</p>
+
+<p><a href="https://notebooks.gesis.org/binder/jupyter/user/tdgriffith-gershgorin-kmbpflrg/voila/render/2020-04-06_Gershgorin-interactive_01.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
+
+<p>This clever approach of bounding the neighborhood an eigenvalue may fall in is well applied as a first check for any large system matrix. With only basic mathematical operations, we can get some feel for the nature of the system in a very visual manner.</p>
 
