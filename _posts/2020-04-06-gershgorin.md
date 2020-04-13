@@ -37,7 +37,7 @@ Let's think back to the almost diagonal matrix above. If we sum the off diagonal
 ## 4. Application
 This theorem is best described and appreciated with a visualization. Here is a simple web app I build to visualize the circles. You will be able to modify the circle radius and circle center for a 4x4 matrix. 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/jupyter/user/tdgriffith-gershgorin-kmbpflrg/voila/render/2020-04-06_Gershgorin-interactive_01.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tdgriffith/gershgorin/master?urlpath=%2Fvoila%2Frender%2F2020-04-06_Gershgorin-interactive_01.ipynb)
 
 This clever approach of bounding the neighborhood an eigenvalue may fall in is well applied as a first check for any large system matrix. With only basic mathematical operations, we can get some feel for the nature of the system in a very visual manner.
 
