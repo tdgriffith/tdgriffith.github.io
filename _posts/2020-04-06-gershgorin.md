@@ -1,4 +1,6 @@
 ---
+layout: post
+mathjax: true
 title: "Haben Wir Eine Matrix"
 last_modified_at: 2019-06-20T13:51:02-05:00
 categories:
@@ -28,9 +30,12 @@ Obviously, there's no problem here. The eigenvalues of the matrix are simply the
 How much does a slight change in the off diagonal terms change the eigenvalues? Hopefully, your intuition suggests that the they don't change much. The new eigenvalues are -5.0001, -3.9999, and -7. Perhaps you could somehow bound the magnitude of the off-diagonal terms to the change in eigenvalue. Now, your inner linear functional analyst should be screaming: "USE THE NORM"
 
 ## 3. Statement of Theorem
-Sum the absolute value of the off-diagonal terms in each row. This is your Gershgorin circle radius. The value of the on-diagonal term is your Gershgorin circle center. **Every eigenvalue of the system falls within at least one of the Gershgorin circles** 
+Sum the absolute value of the off-diagonal terms in each row. This is your Gershgorin circle radius. The value of the on-diagonal term is your Gershgorin circle center. **Every eigenvalue of the system falls within at least one of the Gershgorin circles.** More formally, and [heavily borrowed](https://math.la.asu.edu/~gardner/Gcircle.pdf) from  [Prof. Gardner at ASU](https://math.la.asu.edu/~gardner/), let $A \in C^{n \times n}$. Then, $D_i$ is a closed disk in the complex plane centered at $A_{ii}$ who's radius is given by $r_i=\sum_{i \neq j} |A_{ij}|$:
 
-The proof for this theorem involves more discussion of norms and eigenvectors and triangle inequalities than I want to deal with, but a good outline is [here](https://mathworld.wolfram.com/GershgorinCircleTheorem.html).
+$$D_i={z \in C: |z-A_{ii}| \leq r_i}$$
+
+
+The proof for is pretty easy, and has been well covered elsewhere; a good outline is [here](https://mathworld.wolfram.com/GershgorinCircleTheorem.html).
 
 Let's think back to the almost diagonal matrix above. If we sum the off diagonal terms, we see that our Gershgorin circle radius is very small. We know the eigenvalues fall inside that very small circle because the matrix is almost diagonal. It's a neat trick to extend the radius as your matrix becomes less diagonal, while still knowing the eigenvalues fall inside. 
 
