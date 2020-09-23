@@ -40,7 +40,7 @@ The proof for is pretty easy, and has been well covered elsewhere; a good outlin
 Let's think back to the almost diagonal matrix above. If we sum the off diagonal terms, we see that our Gershgorin circle radius is very small. We know the eigenvalues fall inside that very small circle because the matrix is almost diagonal. It's a neat trick to extend the radius as your matrix becomes less diagonal, while still knowing the eigenvalues fall inside. 
 
 ## 4. Application
-This theorem is best described and appreciated with a visualization. Here is a simple web app I build to visualize the circles. You will be able to modify the circle radius and circle center for a 4x4 matrix. 
+This theorem is best described and appreciated with a visualization. Here is a simple web app to visualize the circles. You will be able to modify the circle radius and circle center for a 4x4 matrix. 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tdgriffith/gershgorin/master?urlpath=%2Fvoila%2Frender%2F2020-04-06_Gershgorin-interactive_01.ipynb)
 
