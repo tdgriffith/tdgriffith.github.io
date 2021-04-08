@@ -62,7 +62,7 @@
 <h2 id="3-statement-of-theorem">3. Statement of Theorem</h2>
 <p>Sum the absolute value of the off-diagonal terms in each row. This is your Gershgorin circle radius. The value of the on-diagonal term is your Gershgorin circle center. <strong>Every eigenvalue of the system falls within at least one of the Gershgorin circles.</strong> More formally, and <a href="https://math.la.asu.edu/~gardner/Gcircle.pdf">heavily borrowed</a> from  <a href="https://math.la.asu.edu/~gardner/">Prof. Gardner at ASU</a>, let $A \in C^{n \times n}$. Then, $D_i$ is a closed disk in the complex plane centered at $A_{ii}$ who’s radius is given by $r_i=\sum_{i \neq j} |A_{ij}|$:</p>
 
-<script type="math/tex; mode=display">D_i={z \in C: |z-A_{ii}| \leq r_i}</script>
+\[D_i={z \in C: |z-A_{ii}| \leq r_i}\]
 
 <p>The proof for is pretty easy, and has been well covered elsewhere; a good outline is <a href="https://mathworld.wolfram.com/GershgorinCircleTheorem.html">here</a>.</p>
 
