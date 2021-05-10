@@ -1,6 +1,7 @@
 ---
 title: "Cheesecakes"
 last_modified_at: 2019-06-20T13:51:02-05:00
+layout: post
 categories:
   - Blog
 tags:

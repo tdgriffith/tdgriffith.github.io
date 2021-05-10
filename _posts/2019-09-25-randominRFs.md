@@ -1,6 +1,7 @@
 ---
 title: "The Random in Random Forests"
 last_modified_at: 2019-10-15T15:19:02-05:00
+layout: post
 categories:
   - Blog
 tags:
