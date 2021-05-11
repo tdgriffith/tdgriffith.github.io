@@ -14,7 +14,7 @@ It’s a little overwhelming to see my name on a journal paper, which is the fir
 
 Research has broadly become less and less accessible to the public for a lot of reasons, so I feel strongly that we need to share our results in an easily understandable way, especially when a lot of our resources come from taxpayers. That in mind, here’s the summary of our recent publication in *Biomedical Signal Processing and Control*.
 
-# 2. Motivation and Objectives
+# 2. Spatio-temporal Dynamics and the Brain
 One of the core themes in my thesis is that robot teammates in the future need to act more like human teammates. Robots are really good at doing the same thing over and over, while humans are really adaptable. (Side note, check out [David Eagleman](https://www.youtube.com/watch?v=386s-y1aRRo) on this, it's wild)
 
 Currently, there aren’t very good solutions for this. Some researchers have shown good results getting robots to interact effectively with human cognition, but the application is very specific and often not scalable. That is, the computational or algorithmic or hardware constraints prevent widespread use. There’s a real need for a canonical model of human cognition (fatigue, workload, engagement, etc.) Lots of other scientific and engineering disciplines have this. Newtonian mechanics have $F=ma$. Quantum mechanics has the Schrodinger equation. Electrodynamics has the Maxwell equations. These equations are born out of a ton of hard work by really smart people, who observed the behaviour of these systems and encoded them as equations. Rigorous, mathematical statements from which we can understand and diagnose these systems. 
@@ -25,7 +25,7 @@ I've gotten some interesting comments lately suggesting this is some deep DoD sc
 
 The work we present in this paper is a tiny step towards that goal.
 
-# 3. Technical Approach
+# 3. A Limited Description of the Technical Tools Needed
 Ok so here we go. Reminder, we have a couple of goals:
 1. Understand brain activity better (how do the values change, are the signals stable, can we use brain activity to model things)
 2. Use rigorous mathematics that can be broadly applied (no ad-hoc modeling, no guessing)
@@ -35,14 +35,22 @@ For many engineers, the best way to describe a system (racecar, chemical plant, 
 
 And lucky us! Other smarter humans have already done the hard math of figuring out how to extract state space models from systems with unknown inputs. Yay research! This falls broadly into the field of system identification, specifically output only modal analysis. Again, not to get bogged down in the details, but if we have sensors that measure some system we don’t know the equations for, we can use a little statistics and try to back out the basic patterns which combine to create the measured signal. In brief, we have a set of measurements at one time $y(t_1)$ and another set of measurements at a later time $y(t_2)$. We can use orthogonal projections and least squares to figure out the relationship between $y(t_1)$ and $y(t_2)$. We describe the dynamics in terms of modes. Most physical systems have modes. A plucked guitar string for example, vibrates at the fundamental frequency and a series of overtones. The total sum of these modes, each with a different frequency, gives rise to the distinct sound of each instrument. More on this in a really nice write up [here.](http://www.bsharp.org/physics/guitar)
 
-# 4. Results
+# 4. New Results from the Use of Modal Analysis on the Brain
 
 It's natural to extend this idea of modal analysis to the brain. [Lots](https://www.sciencedirect.com/science/article/pii/S0301008297000233?casa_token=4_tpq6tP3sIAAAAA:n2CZ6zU5M5gvRnV8mN2J_XQVcHMUihN4J318CYqK6ScoR527vE4HJUAKGN_AR_F7ZlhWm7G15w) and [lots](https://www.jneurosci.org/content/26/1/63.short) and [lots](https://www.frontiersin.org/articles/10.3389/fnsys.2017.00016/full) of research has identified correlations between specific frequency bands of brain activity and modeling outcomes of interest. Further, a modal representation gives us a feel for how energy moves across the brain at each frequency. Modes are uniquely suited to measure the spatio-temporal behavior of the brain. Our modeling approach uniquely divides chaotic, noisy brain wave data into a series of independent modes which describe most of the variance in the data. This is better represented with a picture:
 
 <figure class="half full">
+	<img src="/assets/images/layout.png" style="height:300px">
+	<figcaption>Figure 1: Sensor Locations on the Brain</figcaption>
+</figure>
+You can see in this image the placement of 32 spatial sensors. I'll resist the urge to drone on about spatial sampling principles, but suffice to say that each of these 32 locations in the left picture captures different electrical signals from different parts of the brain. We can incorporate those into our modal model on the right. You are looking at a 3D view of the brain if we draw straight lines between each of the sensors. Discerning readers will notice that not everyone's head is the same size or shape! Here we must make an assumption. Fortunately, [a previous study](https://www.sciencedirect.com/science/article/abs/pii/S1053811909001475?via%3Dihub) has tabulated the average locations of each sensor of a significant population, so we just the average sensor placements to define the model.
+
+We've defined the spatial relationship between each of the sensors in our model. Now, using existing brainwave datasets, we can apply the output only modal decomposition algorithm to extract the most significant modes that explain the total brainwave signal. Two of the most significant modes from one section are shown:
+
+<figure class="half full">
 	<img src="/assets/images/mode1.gif" style="height:300px">
 	<img src="/assets/images/mode3.gif" style="height:300px">
-	<figcaption>Two Example Modes at Different Temporal Frequencies</figcaption>
+	<figcaption>Figure 2: Two Example Modes at Different Temporal Frequencies</figcaption>
 </figure>
 
 In the two example modes above, you can see that the brain has a distinct patern for the distinct frequencies. Even though the overal measurement is very difficult to extract information from, the modes reveal paterns in space time that were previously hidden. Obviously, I've skipped over a lot of detail here. How we obtain the modes and make sure they're real is very important, but that description is better suited to the actual journal paper. One of the immediate things we noticed about these modes is that people share common modes. We found 4 during our study:
@@ -60,7 +68,7 @@ A note on this notion of complexity. Complexity describes how out of phase the m
 
 Finally, we report that it's easy to tell one person from another by looking at their modes. Using a simple random forest ([the honey badger of regression techniques](/blog/2019/09/25/randominRFs.html)), it's possible to identify which modes came from which people with nearly 100% accuracy.
 
-# 5. Discussion
+# 5. Why Does This Matter?
 We've learned a couple things that are highlighted in the publication
 1. System identification techniques, that are usually applied to mechanical systems, can be use for high fidelity estimates of brain activity
 2. The resultant models describe the emergent activity in modal space, which describes the spatio-temporal dynamics in a rigorous fashing
@@ -74,5 +82,5 @@ You can find the actual publication [here](), which has all the technical detail
 
 <figure class="half full">
 	<img src="/assets/images/celeb_ribs.jpg" style="height:300px">
-	<figcaption>Celebratory Ribs</figcaption>
+	<figcaption>Figure 3: Celebratory Ribs</figcaption>
 </figure>
