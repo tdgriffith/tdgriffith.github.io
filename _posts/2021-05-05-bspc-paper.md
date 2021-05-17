@@ -6,8 +6,8 @@ mathjax: true
 categories:
   - Blog
 tags:
-  - ML
-  - Fish
+  - publications
+  - dynamics
 ---
 # 1. A Little Perspective
 It’s a little overwhelming to see my name on a journal paper, which is the first sort of deliverable that validates what has been a lot of work over the past few years. Like a lot of the graduate students I know, I obsessed over getting the perfect results, perfect plots, perfect write up. It’s probably good we all have wise PI’s to force us to submit preprints. 
@@ -78,7 +78,7 @@ We've learned a couple things that are highlighted in the publication
 
 You'll notice we haven't yet been able to extend this modal analysis into the domain of actual cognitive modeling. For example, I don't know right now if the modes are relevant to engagement. Maybe the modes become more complex as you get tired, or maybe they get less complex. This is the subject of much of my current work, which we hope to share soon. There are so many opportunities here, it's hard to describe where this research will take our group. This opens many doors, such as state estimation in the form of optimal Kalman filtering. For now, we're excited just to suggest the idea that modes may play a key role in the analysis and diagnostics of brain activity. 
 
-You can find the actual publication [here](), which has all the technical details along with the code [here](https://github.com/tdgriffith/SysID_EEGdynamics). I'll spend the weekend enjoying celebratory ribs. 
+You can find the actual publication [here PENDING](), which has all the technical details along with the code [here](https://github.com/tdgriffith/SysID_EEGdynamics). I'll spend the weekend enjoying celebratory ribs. 
 
 <figure class="half full">
 	<img src="/assets/images/celeb_ribs.jpg" style="height:300px">
